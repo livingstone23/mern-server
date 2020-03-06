@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 require('dotenv').config({path: 'variables.env'});
-const dbRoute = 'mongodb+srv://sa:ABCabc123@cluster0-apldc.mongodb.net/merntasks';
+//const dbRoute = 'mongodb+srv://sa:ABCabc123@cluster0-apldc.mongodb.net/merntasks';
+
+//const dbRoute2 = 'mongodb+srv://sa:ABCabc123@cluster0-apldc.mongodb.net/test?retryWrites=true&w=majority';
 
 const conectarDB = async () => {
     try { 
