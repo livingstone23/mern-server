@@ -7,7 +7,7 @@ const conectarDB = async () => {
                 await 
                 //mongoose.connect(process.env.DB_MONGO, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
 
-                mongoose.connect(dbRoute, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => { console.log('Connected to mongoDB')})
+                mongoose.connect(dbRoute, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false, useCreateIndex: true, reconnectTries: 30, reconnectInterval: 500 }).then(() => { console.log('Connected to mongoDB')})
 
 
         console.log('DB Conectada');
