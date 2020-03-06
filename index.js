@@ -33,7 +33,7 @@ app.use('/api/task', require('./routes/task'));
 
 //arracar la app
 app.listen(port,'0.0.0.0', ()=> {
-    console.log(`El servidor esta funcionando desde el puerto ${port}`);
+    console.log(`El servidor esta funcionando LCANO puerto : ${port}`);
 });
 
 
